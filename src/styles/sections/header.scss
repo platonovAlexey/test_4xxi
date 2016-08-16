@@ -1,0 +1,53 @@
+.header{
+    @include clearfix;
+    height: $lhheader;
+    background-color: #3C434A;
+    position: relative;
+}
+.logo{
+    position: relative;
+    float: left;
+    margin-right: 160px;
+    &__link{
+        position: relative;
+        display: block;
+        &__img{
+            width: 137px;
+            height: 36px;
+            margin: 9px 0 15px 0;
+        }
+    }
+}
+
+.subscribe{
+    position: relative;
+    float: left;
+    text-transform: uppercase;
+    color:#A3ADB3;
+    line-height: $lhheader;
+    font-size: 13px;
+    &__link{
+        color:#37b7ec;
+        text-decoration: none;
+        border-bottom: 1px solid #37b7ec;
+        &:hover{
+            text-decoration: none;
+            border-bottom: none;
+        }
+    }
+}
+
+.login{
+    position: relative;
+    float: right;
+    line-height: $lhheader;
+    &__link{
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            color:#37b7ec;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$footer-soc-fb-name: 'footer-soc-fb';
+$footer-soc-fb-x: 124px;
+$footer-soc-fb-y: 56px;
+$footer-soc-fb-offset-x: -124px;
+$footer-soc-fb-offset-y: -56px;
+$footer-soc-fb-width: 10px;
+$footer-soc-fb-height: 20px;
+$footer-soc-fb-total-width: 144px;
+$footer-soc-fb-total-height: 84px;
+$footer-soc-fb-image: 'sprite.png';
+$footer-soc-fb: (124px, 56px, -124px, -56px, 10px, 20px, 144px, 84px, 'sprite.png', 'footer-soc-fb', );
+$footer-soc-tw-name: 'footer-soc-tw';
+$footer-soc-tw-x: 124px;
+$footer-soc-tw-y: 0px;
+$footer-soc-tw-offset-x: -124px;
+$footer-soc-tw-offset-y: 0px;
+$footer-soc-tw-width: 20px;
+$footer-soc-tw-height: 16px;
+$footer-soc-tw-total-width: 144px;
+$footer-soc-tw-total-height: 84px;
+$footer-soc-tw-image: 'sprite.png';
+$footer-soc-tw: (124px, 0px, -124px, 0px, 20px, 16px, 144px, 84px, 'sprite.png', 'footer-soc-tw', );
+$soc-fb-name: 'soc-fb';
+$soc-fb-x: 0px;
+$soc-fb-y: 0px;
+$soc-fb-offset-x: 0px;
+$soc-fb-offset-y: 0px;
+$soc-fb-width: 22px;
+$soc-fb-height: 22px;
+$soc-fb-total-width: 144px;
+$soc-fb-total-height: 84px;
+$soc-fb-image: 'sprite.png';
+$soc-fb: (0px, 0px, 0px, 0px, 22px, 22px, 144px, 84px, 'sprite.png', 'soc-fb', );
+$soc-in-name: 'soc-in';
+$soc-in-x: 62px;
+$soc-in-y: 0px;
+$soc-in-offset-x: -62px;
+$soc-in-offset-y: 0px;
+$soc-in-width: 22px;
+$soc-in-height: 22px;
+$soc-in-total-width: 144px;
+$soc-in-total-height: 84px;
+$soc-in-image: 'sprite.png';
+$soc-in: (62px, 0px, -62px, 0px, 22px, 22px, 144px, 84px, 'sprite.png', 'soc-in', );
+$soc-tw-name: 'soc-tw';
+$soc-tw-x: 0px;
+$soc-tw-y: 62px;
+$soc-tw-offset-x: 0px;
+$soc-tw-offset-y: -62px;
+$soc-tw-width: 22px;
+$soc-tw-height: 22px;
+$soc-tw-total-width: 144px;
+$soc-tw-total-height: 84px;
+$soc-tw-image: 'sprite.png';
+$soc-tw: (0px, 62px, 0px, -62px, 22px, 22px, 144px, 84px, 'sprite.png', 'soc-tw', );
+$soc-vk-name: 'soc-vk';
+$soc-vk-x: 62px;
+$soc-vk-y: 62px;
+$soc-vk-offset-x: -62px;
+$soc-vk-offset-y: -62px;
+$soc-vk-width: 22px;
+$soc-vk-height: 22px;
+$soc-vk-total-width: 144px;
+$soc-vk-total-height: 84px;
+$soc-vk-image: 'sprite.png';
+$soc-vk: (62px, 62px, -62px, -62px, 22px, 22px, 144px, 84px, 'sprite.png', 'soc-vk', );
+$spritesheet-width: 144px;
+$spritesheet-height: 84px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($footer-soc-fb, $footer-soc-tw, $soc-fb, $soc-in, $soc-tw, $soc-vk, );
+$spritesheet: (144px, 84px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(../img/sprites/#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
