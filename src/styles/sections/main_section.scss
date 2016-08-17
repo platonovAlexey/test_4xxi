@@ -1,0 +1,197 @@
+.main{
+    position: relative;
+    margin: 30px 0 170px;
+    @include clearfix;
+}
+
+.authorized{
+    position: relative;
+    @include clearfix;
+    margin-bottom: 23px;
+}
+
+.user{
+    float: left;
+    &__picture{
+        border-radius: 50%;
+        float: left;
+        margin-right: 15px;
+        &__img{
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &__name{
+        font-size: 18px;
+        color: #2C2F31;
+        float: left;
+        line-height: 48px;
+    }
+}
+
+.social{
+    float: right;
+    margin-top: 18px;
+
+    &__list{
+        display: block;
+        float: left;
+        &__item{
+            list-style: none;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &__link{
+                display: block;
+                color: #fff;
+                &__fb{
+                    @include sprite($soc-fb);
+                    display: block;
+                }
+                &__vk{
+                    @include sprite($soc-vk);
+                    display: block;
+                }
+                &__tw{
+                    @include sprite($soc-tw);
+                    display: block;
+                }
+                &__in{
+                    @include sprite($soc-in);
+                    display: block;
+                }
+            }
+
+            .btn{
+                color: #fff;
+                background-color: #92B6C4;
+                border-radius: 4px;
+                text-decoration: none;
+                padding: 4px 6px;
+                font-size: 13px;
+                &:hover{
+                    color: #37b7ec;
+                }
+            }
+        }
+    }
+}
+
+.title__checklist{
+    display: block;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #2C2F31;
+}
+
+.add__centrallo{
+    border: none;
+    float: right;
+    padding: 8px 16px;
+    background-color: #37B7EC;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    &:hover{
+        color: #37b7ec;
+        background-color: #fff;
+    }
+}
+
+.post{
+    min-height: 78px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 12px;
+}
+
+/*checklist*/
+.list__checkbox {
+    display: inline-block;
+    height: auto;
+    list-style-type: none;
+    width: 100%;
+    &__item{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.custom-check {
+    color: #494949;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    height: 1.2em;
+    margin: .6em auto;
+    position: relative;
+    text-align: left;
+    width: 95%;
+    &__checkbox{
+        -webkit-border-radius: .125em;
+        border-radius: .125em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        height: 1.1em;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 14px;
+        height: 14px;
+    }
+    &__text{
+        cursor: pointer;
+        display: block;
+        height: 1.1em;
+        left: 0;
+        margin-top: -.02em;
+        padding-left: 20px;
+        position: absolute;
+        text-align: left;
+        top: 0;
+    }
+}
+
+
+.check-B{
+    &__background{
+        background-color: white;
+        border-radius: .125em;
+        transition: all .2s ease-in-out;
+    }
+
+
+    &:checked + .check-B__background{
+        animation: bouncing-item .5s ease-in-out .2s 1 normal forwards;
+        background-color: $checked-color;
+        box-shadow: $z-depth-1;
+    }
+
+
+    &__checkbox{
+        border: solid .125em #ccc;
+        transition: all .1s ease-in-out .25s;
+    }
+
+
+    &:checked + .check-B__background + .check-B__checkbox{
+        border-color: white;
+        border-radius: 0;
+        border-right: none;
+        border-top: none;
+        box-shadow: -1px 1px 1px rgba(black, .1);
+        height: .33em;
+        left: .10em;
+        top: .2em;
+        transform: rotate(-45deg);
+        width: .66em;   }
+}

@@ -5,6 +5,7 @@
 @import "helpers/px-to-em.scss";
 @import "sections/header.scss";
 @import "sections/footer.scss";
+@import "sections/main_section.scss";
 @import "../img/sprites/sprite.scss";
 
 
@@ -69,4 +70,18 @@ ul{
 	li{
 		list-style: none;
 	}
+}
+
+input[type="checkbox"], input[type="radio"] {
+    opacity: 0;
+    outline: none;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
 }

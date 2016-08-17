@@ -18,3 +18,8 @@
 	margin: auto;
 	position: absolute;
 }
+
+@mixin inlineblock ($valine: top) {
+	display: inline-block;
+	vertical-align: $valine;
+}

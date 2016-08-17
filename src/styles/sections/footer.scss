@@ -22,7 +22,7 @@
 .nav__footer{
     position: relative;
     float: left;
-    line-height: $lhfooter;
+    line-height: $lhfooter - 2px;
     &__list{
         list-style: none;
         position: relative;
@@ -41,7 +41,6 @@
         text-transform: uppercase;
         font-size: 12px;
         text-decoration: none;
-        display: block;
         &:hover{
             color: #37b7ec;
         }
