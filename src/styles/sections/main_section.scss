@@ -430,5 +430,112 @@
             }
         }
     }
+}
 
+/*protected section*/
+.protected{
+    position: relative;
+    @include clearfix;
+    &__date{
+        font-size: 16px;
+        line-height: 18px;
+        color: #AEB4BA;
+        float: left;
+    }
+    &__title{
+        float: right;
+        &__link{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 18px;
+            color: #858585;
+            &:hover{
+                color: #009CE6;
+            }
+        }
+    }
+}
+/*label protected*/
+.mark__top__protected{
+    width: 0;
+	height: 0;
+	border-top: 48px solid #3C434A;
+	border-left: 48px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 0 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: -48px;
+        top: -48px;
+        border-style: solid;
+        border-width: 48px 0 0 48px;
+        border-color: transparent transparent transparent #fff;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 10;
+        top: -44px;
+        left: -20px;
+        @include sprite($protected-icon);
+    }
+}
+
+/*archived section*/
+.archived{
+    position: relative;
+    @include clearfix;
+    &__date{
+        font-size: 16px;
+        line-height: 18px;
+        color: #AEB4BA;
+        float: left;
+    }
+    &__title{
+        float: right;
+        &__link{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 18px;
+            color: #858585;
+            &:hover{
+                color: #009CE6;
+            }
+        }
+    }
+}
+/*label archived*/
+.mark__top__archived{
+    width: 0;
+	height: 0;
+	border-top: 48px solid #979DA3;
+	border-left: 48px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 0 0;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: -48px;
+        top: -48px;
+        border-style: solid;
+        border-width: 48px 0 0 48px;
+        border-color: transparent transparent transparent #fff;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 10;
+        top: -44px;
+        left: -20px;
+        @include sprite($archived-icon);
+    }
 }
