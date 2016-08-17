@@ -2,11 +2,14 @@
 @import "helpers/mixins.scss";
 @import "helpers/variables.scss";
 @import "helpers/fonts.scss";
-@import "helpers/px-to-em.scss";
+@import "helpers/px-to-em.scss"; /*?*/
+@import "helpers/adjustment.scss";
 @import "sections/header.scss";
 @import "sections/footer.scss";
+@import "sections/popup.scss";
 @import "sections/main_section.scss";
 @import "../img/sprites/sprite.scss";
+@import "helpers/media.scss";
 
 
 
@@ -19,74 +22,3 @@
 sprite (подключать в каждом файле, где используются иконки)
 @import "../img/sprites/sprite";
 */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.layout-center-wrapper{
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	@include clearfix;
-}
-
-body,html{
-	width: 100%;
-	height: 100%;
-}
-
-
-body{
-	font-family: "texgyreherosregular", sans-serif;
-	font-weight: normal;
-	font-size: $pxval;
-	line-height: $base;
-	min-width: 320px;
-	position: relative;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden;
-	background: #75CAE8 url('../img/bg/bg.png') repeat top center;
-}
-
-.container{
-	max-width: 960px;
-	min-width: 300px;
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-	padding: 0 60px;
-	position: relative;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	width: 100%;
-	@include clearfix;
-}
-
-ul{
-	li{
-		list-style: none;
-	}
-}
-
-input[type="checkbox"], input[type="radio"] {
-    opacity: 0;
-    outline: none;
-    -ms-touch-action: none;
-    touch-action: none;
-}
-
-input[type="checkbox"], input[type="radio"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}

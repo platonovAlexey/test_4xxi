@@ -11,7 +11,38 @@
 }
 
 /* Small Devices, Tablets */
+@media screen and (max-width : 820px){
+	.container{
+		padding: 0 25px;
+	}
+	.logo{
+		margin-right: 76px;
+	}
+	.description__row .description__map{
+		width: 47%;
+	}
+	.description__row .description__address{
+		width: 40%;
+	}
+	.description__row .description__file__item{
+		width: 20%;
+	}
+	.list__checkbox__item{
+		margin-bottom: 20px;
+	}
+	.copy{
+		margin-right: 160px;
+	}
+	.header__popup{
+		display: block;
+	}
+	.description__row .description__gallery__item{
+		width: 32%;
+	}
+}
 @media only screen and (max-width : 768px) {
+
+
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
