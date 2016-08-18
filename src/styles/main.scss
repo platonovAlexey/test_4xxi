@@ -6,17 +6,13 @@
 @import "helpers/adjustment.scss";
 @import "sections/header.scss";
 @import "sections/footer.scss";
-@import "sections/popup.scss";
+@import "sections/popup_header.scss";
 @import "sections/main_section.scss";
+@import "sections/social_media.scss";
+@import "sections/share_popup.scss";
 @import "../img/sprites/sprite.scss";
 @import "helpers/media.scss";
 
-
-
-/*
-@import "sections/header";
-@import "sections/footer";
-*/
 
 /*
 sprite (подключать в каждом файле, где используются иконки)

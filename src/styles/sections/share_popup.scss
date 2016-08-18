@@ -1,0 +1,85 @@
+.share__popup{
+    display: none;
+    position: absolute;
+    width: 280px;
+    height: 212px;
+    background-color: #fff;
+    z-index: 100;
+    left: 50%;
+    margin-left: -140px;
+    top: 50px;
+    &__title{
+        font-size: 22px;
+        line-height: 27px;
+        color: #404143;
+        text-align: center;
+        padding: 17px 0 17px 0;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+.close__share__popup {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    text-decoration: none;
+    color: #757E87;
+    @include sprite($share_popup_close);
+    display: block;
+}
+
+.share__soc__block{
+    background-color: #F0F5FA;
+    height: 149px;
+    padding-top: 20px;
+}
+
+.share__link{
+    background-color: #37b7ec;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+
+.share__list__popup{
+    position: relative;
+    @include clearfix;
+    margin: 30px 36px 20px 36px;
+    &__item{
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        display: block;
+    }
+    &__icon{
+        display: block;
+    }
+    &__fb{
+        @include sprite($share_fb);
+    }
+    &__tw{
+        @include sprite($share_tw);
+    }
+    &__vk{
+        @include sprite($share_vk);
+    }
+    &__in{
+        @include sprite($share_in);
+    }
+}
+
+.share__popup__show{
+    display: block;
+}

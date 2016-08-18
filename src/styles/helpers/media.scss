@@ -18,6 +18,10 @@
 	.logo{
 		margin-right: 76px;
 	}
+	.login__link{
+		position: relative;
+		top: -2px;
+	}
 	.description__row .description__map{
 		width: 47%;
 	}
@@ -37,8 +41,47 @@
 		display: block;
 	}
 	.description__row .description__gallery__item{
-		width: 32%;
+		width: 28%;
 	}
+	.description__row .description__gallery__picture{
+		height: 120px;
+	}
+	.popup__hide{
+	    display: none;
+	}
+}
+@media screen and (max-width : 670px){
+	.logo{
+		margin-right: 15px;
+	}
+}
+@media screen and (max-width : 600px){
+	.logo{
+		margin-right: 63px;
+	}
+	.subscribe{
+		display: none;
+	}
+	.subscribe__media{
+		display: block;
+	}
+	.social{
+		display: none;
+	}
+	.gallery__picture{
+		height: 120px;
+	}
+	.social, .authorized{
+		display: none;
+	}
+	.social__media{
+		display: block;
+	}
+	.copy{
+		display: none;
+	}
+
+
 }
 @media only screen and (max-width : 768px) {
 

@@ -19,7 +19,7 @@
     }
 }
 
-.subscribe{
+.subscribe, .subscribe__media{
     position: relative;
     float: left;
     text-transform: uppercase;
@@ -30,10 +30,20 @@
         color:#37b7ec;
         text-decoration: none;
         border-bottom: 1px solid #37b7ec;
+        font-weight: 600;
         &:hover{
             text-decoration: none;
             border-bottom: none;
         }
+    }
+}
+
+.subscribe__media{
+    display: none;
+    .subscribe__link{
+        text-decoration: none;
+        border: none;
+
     }
 }
 
