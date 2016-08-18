@@ -1,0 +1,92 @@
+.description__row{
+	padding-bottom: 25px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #BDBDBD;
+	position: relative;
+	@include clearfix;
+	&-bb{
+		border:none;
+	}
+	.description__text{
+		font-size: 16px;
+		line-height: 26px;
+		color: #494949;
+		margin-bottom: 20px;
+	}
+	.description__gallery{
+		position: relative;
+		@include clearfix;
+		&__item{
+			width: 26%;
+			float: left;
+			margin-right: 12px;
+			margin-bottom: 6px;
+			&:nth-child(2){
+				width: 10%;
+			}
+		}
+		&__picture{
+			height: 140px;
+		}
+	}
+
+	.description__map{
+		width: 47%;
+		height: 200px;
+		margin-right: 15px;
+		float: left;
+	}
+
+	.description__address{
+		float: left;
+		width: 50%;
+		&__title{
+			font-size: 16px;
+			line-height: 19px;
+			color: #383838;
+			font-weight: 600;
+			margin-bottom: 7px;
+		}
+		&__streat{
+			font-size: 16px;
+			line-height: 18px;
+			color: #858585;
+			margin-bottom: 7px;
+		}
+		&__country{
+			font-size: 16px;
+			line-height: 18px;
+			color: #858585;
+			margin-bottom: 7px;
+		}
+		&__link{
+			font-size: 16px;
+			line-height: 18px;
+			color: #00ADFF;
+			text-decoration: none;
+		}
+	}
+
+	.description__file{
+		position: relative;
+		margin-top: 10px;
+		@include clearfix;
+		&__item{
+			float: left;
+			width: 18%;
+			margin-right: 30px;
+			&:last-child{
+				margin-right: 0;
+			}
+			&__picture{
+				text-align: center;
+			}
+			&__name{
+				text-align: center;
+				font-size: 14px;
+				line-height: 16px;
+				color: #333333;
+			}
+		}
+	}
+}

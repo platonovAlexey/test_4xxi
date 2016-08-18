@@ -1,0 +1,94 @@
+.authorized{
+	position: relative;
+	@include clearfix;
+	margin-bottom: 23px;
+}
+
+.user{
+	float: left;
+	&__picture{
+		overflow: hidden;
+		border-radius: 50%;
+		float: left;
+		margin-right: 15px;
+		width: 48px;
+		height: 48px;
+		&__img{
+			transform: scale(1.5);
+			transform: translateY(2);
+			margin-top: 12px;
+
+		}
+	}
+	&__name{
+		font-size: 18px;
+		color: #2C2F31;
+		float: left;
+		line-height: 48px;
+	}
+}
+
+.social{
+	float: right;
+	margin-top: 18px;
+
+	&__list{
+		display: block;
+		float: left;
+		&__item{
+			list-style: none;
+			display: block;
+			float: left;
+			margin-right: 10px;
+			&:last-child{
+				margin-right: 0;
+			}
+			&__link{
+				display: block;
+				color: #fff;
+				&__fb{
+					@include sprite($soc-fb);
+					display: block;
+				}
+				&__vk{
+					@include sprite($soc-vk);
+					display: block;
+				}
+				&__tw{
+					@include sprite($soc-tw);
+					display: block;
+				}
+				&__in{
+					@include sprite($soc-in);
+					display: block;
+				}
+			}
+
+			.btn{
+				color: #fff;
+				background-color: #92B6C4;
+				border-radius: 4px;
+				text-decoration: none;
+				padding: 4px 6px;
+				font-size: 13px;
+				&:hover{
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+
+.add__centrallo{
+	border: none;
+	float: right;
+	padding: 8px 16px;
+	background-color: $blue;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #fff;
+	&:hover{
+		color: $blue;
+		background-color: #fff;
+	}
+}

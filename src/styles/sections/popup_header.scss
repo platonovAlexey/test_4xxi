@@ -1,73 +1,73 @@
 .header__popup{
-    background-color: #37B7EC;
-    position: relative;
-    padding: 7px 0;
-    display: none;
-    &__logo{
-        display: block;
-        float: left;
-        margin-right: 6px;
-    }
-    &__left{
-        float: left;
-        .centrallo{
-            font-size: 14px;
-            line-height: 17px;
-            color: #fff;
-            font-weight: 600;
-        }
-        .message{
-            font-size: 12px;
-            line-height: 14px;
-            color: #fff;
-        }
-        .message__mobile{
-            display: none;
-            font-size: 12px;
-            line-height: 14px;
-            color: #fff;
-        }
-    }
-    &__right{
-        float: right;
-        .popup__download{
-            border: none;
-            padding: 7px 25px;
-            margin-right: 30px;
-            margin-top: 3px;
-            background-color: #fff;
-            border-radius: 3px;
-            font-size: 13px;
-            line-height: 15px;
-            color: #37B7EC;
-            float: left;
-        }
-        .close__popup{
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            @include sprite($head_popup_close);
-            display: block;
-            float: left;
-            margin-top: 10px;
-            :hover{
-                cursor: pointer;
-            }
-        }
-    }
+	background-color: $blue;
+	position: relative;
+	padding: 7px 0;
+	display: none;
+	&__logo{
+		display: block;
+		float: left;
+		margin-right: 6px;
+	}
+	&__left{
+		float: left;
+		.centrallo{
+			font-size: 14px;
+			line-height: 17px;
+			color: #fff;
+			font-weight: 600;
+		}
+		.message{
+			font-size: 12px;
+			line-height: 14px;
+			color: #fff;
+		}
+		.message__mobile{
+			display: none;
+			font-size: 12px;
+			line-height: 14px;
+			color: #fff;
+		}
+	}
+	&__right{
+		float: right;
+		.popup__download{
+			border: none;
+			padding: 7px 25px;
+			margin-right: 30px;
+			margin-top: 3px;
+			background-color: #fff;
+			border-radius: 3px;
+			font-size: 13px;
+			line-height: 15px;
+			color: $blue;
+			float: left;
+		}
+		.close__popup{
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			@include sprite($head_popup_close);
+			display: block;
+			float: left;
+			margin-top: 10px;
+			:hover{
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 .popup__hide{
-    display: none;
+	display: none;
 }
 
 #body__open__popup{
-    display: none;
-    background: rgba(0,0,0,.5);
-    position:fixed;
-    height:100%;
-    width:100%;
-    z-index:99;
-    top: 0;
-    left:0;
+	display: none;
+	background: rgba(0,0,0,.5);
+	position:fixed;
+	height:100%;
+	width:100%;
+	z-index:99;
+	top: 0;
+	left:0;
 }

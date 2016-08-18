@@ -1,74 +1,74 @@
 @import "../img/sprites/sprite";
 
 .footer{
-    height: $lhfooter;
-    background-color: #3C434A;
-    margin-top: -80px;
-    position: absolute;
-    left: 0;
-    /*bottom: 0;*/
-    width: 100%;
+	height: $lhfooter;
+	background-color: $grey;
+	margin-top: -80px;
+	position: absolute;
+	left: 0;
+	/*bottom: 0;*/
+	width: 100%;
 }
 
 .copy{
-    color:#979EA4;
-    font-size: 12px;
-    text-transform: uppercase;
-    float: left;
-    line-height: $lhfooter;
-    margin-right: 260px;
+	color:#979EA4;
+	font-size: 12px;
+	text-transform: uppercase;
+	float: left;
+	line-height: $lhfooter;
+	margin-right: 260px;
 }
 
 .nav__footer{
-    position: relative;
-    float: left;
-    line-height: $lhfooter - 2px;
-    &__list{
-        list-style: none;
-        position: relative;
-        @include clearfix;
-    }
-    &__item{
-        display: block;
-        float: left;
-        margin-right: 20px;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-    &__link{
-        color: #979EA4;
-        text-transform: uppercase;
-        font-size: 12px;
-        text-decoration: none;
-        &:hover{
-            color: #37b7ec;
-        }
-    }
+	position: relative;
+	float: left;
+	line-height: $lhfooter - 2px;
+	&__list{
+		list-style: none;
+		position: relative;
+		@include clearfix;
+	}
+	&__item{
+		display: block;
+		float: left;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		color: #979EA4;
+		text-transform: uppercase;
+		font-size: 12px;
+		text-decoration: none;
+		&:hover{
+			color: $blue;
+		}
+	}
 }
 
 .footer__soc{
-    float: right;
-    margin-top: 30px;
-    &__list{
-        list-style: none;
-        position: relative;
-        @include clearfix;
-    }
-    &__item{
-        float: left;
-        margin-right: 20px;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-    &__tw{
-        @include sprite($footer-soc-tw);
-        display: block;
-        margin-top: 5px;
-    }
-    &__fb{
-        @include sprite($footer-soc-fb);
-        display: block;
-    }
+	float: right;
+	margin-top: 30px;
+	&__list{
+		list-style: none;
+		position: relative;
+		@include clearfix;
+	}
+	&__item{
+		float: left;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__tw{
+		@include sprite($footer-soc-tw);
+		display: block;
+		margin-top: 5px;
+	}
+	&__fb{
+		@include sprite($footer-soc-fb);
+		display: block;
+	}
 }

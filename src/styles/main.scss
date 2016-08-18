@@ -1,20 +1,24 @@
-@import "helpers/normalize.scss";
-@import "helpers/mixins.scss";
-@import "helpers/variables.scss";
-@import "helpers/fonts.scss";
-@import "helpers/px-to-em.scss"; /*?*/
-@import "helpers/adjustment.scss";
-@import "sections/header.scss";
-@import "sections/footer.scss";
-@import "sections/popup_header.scss";
-@import "sections/main_section.scss";
-@import "sections/social_media.scss";
-@import "sections/share_popup.scss";
-@import "../img/sprites/sprite.scss";
-@import "helpers/media.scss";
+@import "helpers/normalize";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/adjustment";
+@import "sections/header";
+@import "sections/footer";
+@import "sections/popup_header";
+@import "sections/head";
+@import "sections/social_media";
+@import "sections/share_popup";
+@import "sections/checklist";
+@import "sections/sort";
+@import "sections/gallery";
+@import "sections/description_section";
+@import "sections/protected_section";
+@import "sections/archived_section";
+@import "../img/sprites/sprite";
+@import "helpers/media";
 
 
 /*
-sprite (подключать в каждом файле, где используются иконки)
 @import "../img/sprites/sprite";
 */

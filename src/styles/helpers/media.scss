@@ -214,6 +214,12 @@
 		width: 64%;
 		margin-left: 2%;
 	}
+	.list__checkbox{
+		margin-bottom: 50px;
+		&__item{
+			margin-bottom: 50px;
+		}
+	}
 
 }
 @media screen and (max-width : 320px){

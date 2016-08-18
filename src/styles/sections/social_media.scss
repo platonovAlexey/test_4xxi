@@ -1,52 +1,52 @@
 .social__media{
-    display: none;
-    position: relative;
-    @include clearfix;
-    .user{
-        margin-bottom: 20px;
-    }
+	display: none;
+	position: relative;
+	@include clearfix;
+	.user{
+		margin-bottom: 20px;
+	}
 }
 .social__media__buttons{
-    float: left;
-    margin-bottom: 15px;
+	float: left;
+	margin-bottom: 15px;
 }
 .button__centrallo{
-    border: none;
-    float: left;
-    padding: 8px 15px;
-    background-color: #37B7EC;
-    border-radius: 3px;
-    font-size: 13px;
-    color: #fff;
-    margin-right: 16px;
-    &:hover{
-        color: #37b7ec;
-        background-color: #fff;
-    }
+	border: none;
+	float: left;
+	padding: 8px 15px;
+	background-color: $blue;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #fff;
+	margin-right: 16px;
+	&:hover{
+		color: $blue;
+		background-color: #fff;
+	}
 }
 
 .button__share{
-    border: none;
-    float: left;
-    padding: 8px 40px;
-    background-color: #fff;
-    border-radius: 3px;
-    font-size: 13px;
-    color: #3C434A;
-    margin-right: 16px;
+	border: none;
+	float: left;
+	padding: 8px 40px;
+	background-color: #fff;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #3C434A;
+	margin-right: 16px;
 
-    .share_icon{
-        @include sprite($share_icon);
-        float: left;
-        margin-right: 10px;
-    }
+	.share_icon{
+		@include sprite($share_icon);
+		float: left;
+		margin-right: 10px;
+	}
 }
 
 .title__checklist__media{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 34px;
-    color: #2C2F31;
-    margin-bottom: 15px;
-    float: left;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 34px;
+	color: #2C2F31;
+	margin-bottom: 15px;
+	float: left;
 }
