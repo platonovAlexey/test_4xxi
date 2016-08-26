@@ -17,13 +17,10 @@
 		position: relative;
 		@include clearfix;
 		&__item{
-			width: 26%;
+			width: 22%;
 			float: left;
 			margin-right: 12px;
 			margin-bottom: 6px;
-			&:nth-child(2){
-				width: 10%;
-			}
 		}
 		&__picture{
 			height: 140px;
